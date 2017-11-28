@@ -183,7 +183,7 @@ def csv2fits(csv_file, fits_file=None):
 
     t = Table.read(filein, format='ascii.ecsv')
 
-    mjd_header2table(t)
+    # mjd_header2table(t)
     add_radec2header(t)
     flatten_header(t)
 
