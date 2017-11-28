@@ -85,7 +85,7 @@ fetch_gavo() {
   : ${GAVO_ROOT:?GAVO_ROOT not defined}
   sleep 5
   (
-    cd "${GAVO_ROOT}/inputs/veritaslc"  &&\
+    cd "${GAVO_ROOT}/inputs/veritas_lc"  &&\
     git fetch && git pull             &&\
     gavo imp q.rd
   )
