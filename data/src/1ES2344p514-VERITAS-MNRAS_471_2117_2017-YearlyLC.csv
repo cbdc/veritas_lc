@@ -1,0 +1,56 @@
+# %ECSV 0.9
+# ---
+# meta: !!omap
+# - OBJECT: 1ES2344+514
+#
+# - DESCRIBE:
+#    Yearly averaged flux values from VERITAS monitoring observations taken between 2007 and 2015
+#
+# - MJD:
+#    START: 54313 # unit=day
+#    END: 57500 # unit=day
+#
+# - ARTICLE:
+#    label: MNRAS 471, 2117 (2017)
+#    url: https://doi.org/10.1093/mnras/stx1756
+#    arxiv: http://arxiv.org/abs/1708.02829
+#    ads: http://adsabs.harvard.edu/abs/2017MNRAS.471.2117A
+#
+# - COMMENTS:
+#    Name: 1ES2344+514
+#    Tag: 2007-2015
+#    Redshift: 0.044
+#    LiveTime: 47.2 # unit=hour
+#    Significance: 20.8
+#    EnergyThreshold: 350 # unit=GeV
+#    AssumedSpectrum: PowerLaw
+#    AssumedIndex: -2.46
+#    Emin: 0.35 # unit=TeV
+#    Emax: 5 # unit=TeV
+#
+# - LC_TYPE: int_flux_points
+# 
+# datatype:
+# - name: mjd
+#   unit: day
+#   datatype: float64
+# - name: mjd_err
+#   unit: day
+#   datatype: float64
+# - name: flux
+#   unit: ph / (cm2 s)
+#   datatype: float64
+# - name: flux_err
+#   unit: ph / (cm2 s)
+#   datatype: float64
+# - name: upper_limit
+#   datatype: uint8
+#
+mjd mjd_err flux flux_err upper_limit
+54426.67083 49.50062 1.32069e-11 9.83546e-13 0
+54763.23386 0.01573 3.54e-12 0 1
+55504.66987 33.44566 3.13094e-12 1.03394e-12 0
+55863.71705 28.46198 2.79610e-12 1.18550e-12 0
+56229.20672 43.91352 8.30429e-12 1.18523e-12 0
+56585.80574 21.40253 1.49688e-12 6.38971e-13 0
+56984.65568 52.44334 6.36915e-12 7.27559e-13 0
