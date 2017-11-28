@@ -203,6 +203,7 @@ modify() {
 
   # csv2fits $FILEIN $FILEOUT $FILELOG $FLOGERR
   csv2fits $FILEIN_TMP $FILEOUT $FILELOG $FLOGERR
+  echo "csv2fits $FILEIN_TMP $FILEOUT $FILELOG $FLOGERR : $?"
 
   if [ "$?" == "0" ]; then
     local FOUT=$(basename $FILEOUT)
