@@ -163,8 +163,8 @@
   <!-- =============== -->
 
   <service id="web" defaultRenderer="form">
-    <meta name="shortName">Veritas Web</meta>
-    <meta name="title">VERITAS Spectra Web Interface</meta>
+    <meta name="shortName">Veritas-LC web</meta>
+    <meta name="title">VERITAS LightCurves Web Interface</meta>
 
     <publish render="form" sets="local"/>
 
@@ -194,21 +194,13 @@
         ]]></formatter>
       </outputField>
 
-      <outputField name="asdc_link" tablehead="ASDC Portal" select="array[ra,dec]">
-        <formatter><![CDATA[
-          _ra = data[0]
-          _dec = data[1]
-          url = 'http://tools.asdc.asi.it/SED/sed.jsp?&ra=%s&dec=%s' % (str(_ra),str(_dec))
-          yield T.a(href="%s"%url , target="_blank")["ASDC SED tool"]
-        ]]></formatter>
-      </outputField>
     </outputTable>
 
   </service>
 
   <service id="ssa" allowed="ssap.xml">
-    <meta name="shortName">Veritas SSAP</meta>
-    <meta name="title">VERITAS Spectra SSAP Interface</meta>
+    <meta name="shortName">Veritas-LC SSAP</meta>
+    <meta name="title">VERITAS LightCurves Interface</meta>
     <meta name="ssap.dataSource">pointed</meta>
     <meta name="ssap.creationType">archival</meta>
     <meta name="ssap.testQuery">MAXREC=1</meta>
