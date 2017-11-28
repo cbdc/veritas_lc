@@ -190,7 +190,7 @@ modify() {
 
   # Workaround for badly named files
   local BETTERFILENAME=$(echo $FILEIN_TMP | tr -s "." | tr "+" "p")
-  mv $FILEIN_TMP $BETTERFILENAME
+  [ -f $BETTERFILENAME ] || mv $FILEIN_TMP $BETTERFILENAME
   FILEIN_TMP=$BETTERFILENAME
   unset BETTERFILENAME
   unset FILENAME
